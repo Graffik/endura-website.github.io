@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The content of header.html will be included here -->
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+</head>
+<body>
+    <!-- The content of navbar.html will be included here -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide" style="background-image: url('images/endura-diff1.png');">
+        </div>
+        <div class="slide" style="background-image: url('images/endura-diff2.png');">
+        </div>
+        <div class="slide" style="background-image: url('images/endura-diff3.png');">
+        </div>
+    </div>
+</div>
+
+
+<div class="homecolumns1">
+    <div class="featvid1">
+        <div class="sixteen1">
+            <video class="responsive-vid1" preload="metadata" src="/images/endura-intro2.mp4" width="1280" height="720" autoPlay muted loop playsInline type="video/mp4"></video>
+        </div>
+    </div>
+    <div class="feattext1">
+        <h2 class="sub-title1"></h2>
+        <h2 class="sub-title1"></h2>
+    </div>
+</div>
+    
+    
+    <div class="hometext show-on-scroll">
+    <div class="subtext">
+    SoC power delivery is undergoing a radical transformation. New and massive architectures, often fueled by AI create insatiable demand for more computing and storage performance. Efficiently powering these systems at scale requires a new approach. One that takes a holistic view of power requirements for the chips and chiplets that implement the complete system. And one that optimizes performance, scalability, and efficiency over the broad spectrum of switching frequencies, current loads, voltage ranges, and silicon manufacturing processes faced by system designers.
+    <br><br>
+    Endura Technologies is leading the way by providing end-to-end SoC power delivery solutions that integrate its revolutionary, patented architectures, test silicon, design IP, design services, passives (e.g., inductors, capacitors), partnerships, and silicon manufacturing relationships. For challenging applications such as data center, automotive, and many others we are changing the game.
+    </div>
+    </div>
+
+    <!-- More content... -->
+
+    <!-- The content of footer.html will be included here -->
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+    
+    <script src="endura.js"></script>
+</body>
+</html>

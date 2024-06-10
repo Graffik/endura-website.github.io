@@ -1,0 +1,72 @@
+<!-- navbar.html -->
+<div class="topwhitebkgrd fadeInDown">
+    <div class="top">
+        <div class="mast">
+            <script>
+                function updateCopyright(companyName) {
+                    currentDate = new Date();
+                    copyrightYear = currentDate.getFullYear();
+                    document.write("&#169; " + copyrightYear + " " + companyName + ".")
+                }
+            </script>
+
+            <div class="logobox">
+                <a href="/"><img class="logo" src="images/endura-logo.png" alt="Endura Technologies" /></a>
+            </div>
+
+            <div class="topnav">
+                <div id="navigation">
+                    <div id="container">
+                        <ul>
+                            <li class="btn-holder"><a href="technology.html"><button class="btn hover-border"><span>Technology</span></button></a></li>
+                            <li class="dropdown"><a href="#"><button class="btn hover-border"><span>Products</span></button></a>
+                                <div class="dropdown-content">
+                                    <a href="products-svr.html">sVR</a>
+                                    <a href="products-evr.html">eVR</a>
+                                    <a href="products-ivr.html">iVR</a>
+                                </div>
+                            </li>
+                            <li class="btn-holder"><a href="integration.html"><button class="btn hover-border"><span>Integration</span></button></a></li>
+                            <li class="btn-holder"><a href="solutions.html"><button class="btn hover-border"><span>Solutions</span></button></a></li>
+                            <li class="dropdown"><a href="#"><button class="btn hover-border"><span>Company</span></button></a>
+                                <div class="dropdown-company">
+                                    <a href="leadership.html">Leadership</a>
+                                    <a href="news.html">News & Info</a>
+                                    <a href="careers.html">Careers</a>
+                                    <a href="contact-us.html">Contact</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function prods() {
+        var x = document.getElementById("prods");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    function svr() {
+        var x = document.getElementById("svr");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    function comp() {
+        var x = document.getElementById("comp");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The content of header.html will be included here -->
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+</head>
+<body>
+    <!-- The content of navbar.html will be included here -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+<div class="subcolumn">
+    <h1>New system-level approach to power delivery with patented, silicon-proven technology</h1>
+</div>
+
+<div class="subcolumn fade-in-div">
+    <div class="subtext">
+        Conventional general-purpose PMICs (Power Management Integrated Circuits) are being disrupted, paving the way for advanced SoCs to pair with application-specific power delivery. The insatiable demand for more computing and storage performance has given rise to massively scaled semiconductor server solutions. In the automotive segment, the rise of ADAS (Advanced Driver Assistance Systems) and autonomous driving technologies coupled with energy demands of electric vehicles are reshaping automotive SoC power delivery. The result is a shifting focus on cost, efficiency, and scalability of power delivery across frequency, load, and voltage options, with noise levels optimized per target application.
+        <br><br>
+        Endura Technologies is developing a system-level, holistic approach and platform to address the power demands of ICs, chiplets and in-package structures.
+        <br><br>
+        Endura Technologies' silicon-demonstrated disruptive innovations are protected by 60+ patents to address board-level, package-level and on-chip power delivery that is programmable and adaptable. The patented BDDC<sup><small>&trade;</small></sup> (Bypass Dual Duty Cycle) control architecture revolutionizes power delivery management by eliminating routing losses, minimizing heat dissipation, and streamlining of passive components within intricate chips and systems.
+        <br><br>
+        Through an intelligently designed power delivery architecture, a portfolio of designs/chiplets, and an extensive set of silicon-proven IP, these innovations are already enabling significant impact on the development of systems in automotive, data centers, and other high-growth segments.
+    </div> <!-- end of subtext -->
+</div>
+
+<div class="subcolumn fade-in-div">
+    <h1>Three modalities of the Endura Technologies platform for SOC/Chiplet</h1>
+    
+    
+    <div class="techtrips show-on-scroll">
+    <!-- inline block elements cannot have space between div tags else html will display space and 50% width will not work -->
+    <div class="homeleft"><a href="/products-svr"><img src="images/svr.jpg" alt="Endura sVR" /></a><h2><a href="/products-svr">sVR: Stand-Alone<br>Voltage Regulators</a></h2></div><div class="homecenter"><a href="/products-evr"><img src="images/evr.jpg" alt="Endura eVR" /></a><h2><a href="/products-evr">eVR<sup>&trade;</sup>: Embedded<br>Voltage Regulators</a></h2></div><div class="homeright"><a href="/products-ivr"><img src="images/ivr.jpg" alt="Endura iVR" /></a><h2><a href="/products-ivr">iVR: Integrated<br>Voltage Regulators</a></h2></div>
+    <br>
+    <br>
+    <div class="techcolumn"><h2><a href="/products-svr">sVR (2D)</a></h2>
+    <ul>
+    <li>Incorporated at board level</li>
+    <li>Provided as packaged parts</li>
+    <li>Operates between 1-40MHz</li>
+    </ul></div><div class="techcolumn"><h2><a href="/products-evr">eVR<sup>&trade;</sup> (2D, 2.5D, 3D)</a></h2>
+    <ul>
+    <li>Integrated into horizontal/substrate/package for SOC/Chiplet</li>
+    <li>Provided with small footprint (4-5.5A/mm<sup>2</sup></li>
+    <li>Operates at >150MHz</li>
+    </ul></div><div class="techcolumn">
+    <h2><a href="/products-ivr">iVR (IP in SoC)</a></h2>
+    <ul>
+    <li>Incorporated into SoC/Chiplet</li>
+    <li>Granular power delivery</li>
+    <li>Provided as IP in SoC technology node</li>
+    <li>Operates at >150MHz</li>
+    </ul>
+    </div>
+    </div> <!-- end of techtrips -->
+
+    <!-- The content of footer.html will be included here -->
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+    
+    <script src="endura.js"></script>
+</body>
+</html>
+
