@@ -2,6 +2,7 @@
 <html>
 <head>
     <!-- The content of header.html will be included here -->
+    <meta charset="UTF-8">
     <div id="header"></div>
     <script>
         fetch('header.html')
@@ -25,35 +26,53 @@
 <div class="slider-container">
     <div class="slider">
         <div class="slide" style="background-image: url('images/endura-diff1.png');">
-        </div>
-        <div class="slide" style="background-image: url('images/endura-diff2.png');">
+            <div class="slide-content">
+                <p>Game-changing innovations aimed at significantly enhancing system-level value</p>
+                <p>30% Power Performance and Area (PPA) Reduction</p>
+                <p>Patented and disruptive silicon proven architecture</p>
+            </div>
         </div>
         <div class="slide" style="background-image: url('images/endura-diff3.png');">
+            <div class="slide-content" style="margin-right: 30%; width: 60%;">
+                <p>Innovative Power Management and Delivery</p>
+                <ul>
+                    <li>Integrated Passives</li>
+                    <li>Smart Programmable, Flexible</li>
+                    <li>Scalable from SoC's to 2000A+ systems</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('images/endura-diff2.png');">
+            <div class="slide-content" style="margin-right: 35%; width: 60%;">
+                <p><span class="highlight">eVR100</span> - The Evolution of Power</p>
+                <ul class="two-column-list">
+                    <li>Efficiency and Stability</li>
+                    <li>Digital Control</li>
+                    <li>High Speed Switching (150MHz)</li>
+                    <li>3D Integrated Passives</li>
+                    <li>High Current Densities</li>
+                    <li>System Scalable to >2000A</li>
+                </ul>
+                <p><span class="highlight">Coming 2024</span></p>
+            </div>
         </div>
     </div>
-</div>
-
-
-<div class="homecolumns1">
-    <div class="featvid1">
-        <div class="sixteen1">
-            <video class="responsive-vid1" preload="metadata" src="/images/endura-intro2.mp4" width="1280" height="720" autoPlay muted loop playsInline type="video/mp4"></video>
-        </div>
-    </div>
-    <div class="feattext1">
-        <h2 class="sub-title1"></h2>
-        <h2 class="sub-title1"></h2>
-    </div>
-</div>
-    
-    
-    <div class="hometext show-on-scroll">
-    <div class="subtext">
-    SoC power delivery is undergoing a radical transformation. New and massive architectures, often fueled by AI create insatiable demand for more computing and storage performance. Efficiently powering these systems at scale requires a new approach. One that takes a holistic view of power requirements for the chips and chiplets that implement the complete system. And one that optimizes performance, scalability, and efficiency over the broad spectrum of switching frequencies, current loads, voltage ranges, and silicon manufacturing processes faced by system designers.
     <br><br>
-    Endura Technologies is leading the way by providing end-to-end SoC power delivery solutions that integrate its revolutionary, patented architectures, test silicon, design IP, design services, passives (e.g., inductors, capacitors), partnerships, and silicon manufacturing relationships. For challenging applications such as data center, automotive, and many others we are changing the game.
+</div>
+
+<div class="static-slide">
+    <div class="static-content">
+        <div class="subtext">
+            SoC power delivery is undergoing a radical transformation. New and massive architectures, often fueled by AI create insatiable demand for more computing and storage performance. Efficiently powering these systems at scale requires a new approach. One that takes a holistic view of power requirements for the chips and chiplets that implement the complete system. And one that optimizes performance, scalability, and efficiency over the broad spectrum of switching frequencies, current loads, voltage ranges, and silicon manufacturing processes faced by system designers.
+        </div>
+        <img src="images/applications.png" alt="Static Image" class="static-image">
+        <div class="subtext">
+            Endura Technologies is leading the way by providing end-to-end Chiplet / SoC power delivery solutions that integrate its revolutionary, patented architectures, test silicon, design IP, design services, passives (e.g., inductors, capacitors), partnerships, and silicon manufacturing relationships. For challenging applications such as data center, cloud, AI and automotive, along with many other applications. We are changing the game.
+        </div>
     </div>
-    </div>
+</div>
+
+    
 
     <!-- More content... -->
 

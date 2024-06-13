@@ -1205,15 +1205,20 @@ transform: none;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: 100%; /* Make the content span 90% of the slide's width */
+  justify-content: flex-end; /* Adjust this to control the horizontal position */
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 .slide-content {
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
+  width: 50%; /* Adjust the width as needed to fit within the red box */
+  margin-right: 5%; /* Adjust margin to control the spacing from the right edge */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slide-content h2 {
@@ -1223,7 +1228,37 @@ transform: none;
 
 .slide-content p {
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 24px; /* Adjust font size if needed */
+}
+
+.slide-content ul {
+  list-style-type: disc; /* Use disc bullets */
+  margin: 10px 0 0 20px; /* Adjust margins as needed */
+  padding: 0;
+}
+
+.slide-content ul li {
+  font-size: 24px; /* Adjust font size if needed */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin: 5px 0; /* Adjust margin between list items */
+}
+
+.two-column-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style-type: none; /* Remove default list style */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.two-column-list li {
+  width: 50%; /* Each list item takes up 50% of the width */
+  padding-left: 10px; /* Add left padding to create space for custom bullet */
+  position: relative; /* For positioning the custom bullet */
+  font-size: 24px; /* Adjust font size if needed */
+  line-height: 1; /* Adjust line height for better readability */
+  margin: 0px 0; /* Adjust margin between list items */
 }
 
 @keyframes slideAnimation {
@@ -1232,4 +1267,55 @@ transform: none;
   40%, 55% { transform: translateX(-66.666666666%); }
   60%, 75% { transform: translateX(-33.33333333333%); }
   80%, 100% { transform: translateX(0); }
+}
+
+.highlight {
+  color: #FFD700; /* Change to the color you want for highlighting */
+  font-weight: bold; /* Optional: make it bold */
+}
+
+/* Static image styles */
+.static-slide {
+  flex: 1;
+  background: none; /* Remove background image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px; /* Add margin to create space between slides */
+  margin: 10px;
+}
+
+.static-content {
+  text-align: center;
+  color: #fff;
+}
+
+.static-content h2, .static-content p {
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.static-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.static-slide .static-content {
+  text-align: center;
+  color: #000000;
+  padding: 20px;
+}
+
+.static-slide .subtext {
+  font-size: 13pt;
+  line-height: 23pt;
+  color: #000000;
+  font-family: 'arial', sans-serif;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.static-slide .highlight {
+  color: yellow;
 }
